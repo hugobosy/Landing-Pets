@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,700;1,400;2,800&display=swap");
 .link {
   display: block;
   color: #fff;
@@ -6,31 +6,13 @@
   font-weight: 800;
   -webkit-transition: .4s;
   transition: .4s;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 .link:hover {
   color: #ff8402;
-}
-
-@-webkit-keyframes navigation {
-  0% {
-    height: 9rem;
-  }
-  100% {
-    height: 40rem;
-  }
-}
-
-@keyframes navigation {
-  0% {
-    height: 9rem;
-  }
-  100% {
-    height: 40rem;
-  }
 }
 
 .header__nav-burger {
@@ -91,15 +73,6 @@
           transform: rotate(-45deg);
 }
 
-@keyframes navigation {
-  0% {
-    height: 9rem;
-  }
-  100% {
-    height: 40rem;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -154,17 +127,8 @@ h4 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6;
-}
-
-@keyframes navigation {
-  0% {
-    height: 9rem;
-  }
-  100% {
-    height: 40rem;
-  }
 }
 
 .header__nav-burger {
@@ -299,19 +263,10 @@ p {
           align-items: center;
 }
 
-@keyframes navigation {
-  0% {
-    height: 9rem;
-  }
-  100% {
-    height: 40rem;
-  }
-}
-
 .btn {
   display: inline-block;
   margin: 1rem;
-  padding: 1.6rem 3.5rem;
+  padding: 1.4rem 2rem;
   border-radius: .7rem;
   border: 0.1rem solid #2b1d6a;
   background-color: #2b1d6a;
@@ -319,8 +274,7 @@ p {
   font-weight: 600;
   -webkit-transition: .5s;
   transition: .5s;
-  font-size: 1.6rem;
-  letter-spacing: .1rem;
+  font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .2rem;
 }
@@ -474,9 +428,7 @@ p {
 }
 
 .aboutMe__card {
-  width: 60%;
-  height: 20rem;
-  margin: 4rem auto;
+  padding: 1rem 10rem;
   background-color: #fff;
   text-align: center;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -524,7 +476,66 @@ p {
 }
 
 .aboutMe__cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 10rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f1f8ff;
-  padding: 10rem auto;
   border: 1px solid transparent;
+}
+
+.service__card {
+  padding: 3.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.3rem 0.3rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.service__card-img {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.service__card-img img {
+  top: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.service__card-title {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  padding: 1.4rem 0;
+}
+
+.service__card-content {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .1rem;
+  font-size: 1.4rem;
+}
+
+.service__card:hover img {
+  position: relative;
+  top: -1rem;
+}
+
+.service__header {
+  text-align: center;
+  padding: 8.5rem;
+  margin: 0 auto;
+}
+
+.service__header h2 {
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #ff8402;
+}
+
+.service__cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
 }
