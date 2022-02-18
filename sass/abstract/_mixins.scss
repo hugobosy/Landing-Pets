@@ -1,0 +1,89 @@
+@import './variables';
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin backFilter {
+    content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
+
+@mixin burger {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+}
+
+@mixin burgerSpan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 0.2rem;
+    background-color: $white;
+}
+
+@mixin headers {
+    text-align: center;
+    padding: $x-large + 5rem;
+    margin: 0 auto;
+    h2 {
+        padding-bottom: 3rem;
+        border-bottom: 2px solid $contrast;
+    }
+}
+
+@mixin beforeProg($left) {
+    position: absolute;
+    top: -2.2rem;
+    left: $left;
+    font-size: 1.6rem;
+    font-weight: $bolder;
+}
+// Mixins for breakpoints
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (min-width: $screen) {
+        @content;
+    }
+}
