@@ -1,0 +1,11 @@
+@import '../components/service/card';
+.service {
+    &__header {
+        @include headers;
+    }
+
+    &__cards {
+        display: grid;
+        grid-gap: 3rem;
+    }
+}
