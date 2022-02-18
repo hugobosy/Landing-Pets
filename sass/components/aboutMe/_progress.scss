@@ -1,0 +1,48 @@
+@import '../../abstract/variables';
+
+.aboutMe__content {
+    &-progresses {
+        width: 100%;
+        padding-bottom: 8rem;
+    }
+    &-progress {
+        padding: 1rem 0;
+        label {
+            display: block;
+            font-size: $s-large;
+            p {
+                font-weight: $normal;
+            }
+        }
+        progress {
+            position: relative;
+            width: 100%;
+            padding: .8rem;
+        }
+        &:nth-child(1) {
+            progress {
+                &::before {
+                    content: '84%';
+                    @include beforeProg(84%);
+                }
+            }
+        }
+        &:nth-child(2) {
+            progress {
+                &::before {
+                    content: '75%';
+                    @include beforeProg(75%);
+                }
+            }
+        }
+        &:nth-child(3),
+        &:nth-child(4) {
+            progress {
+                &::before {
+                    content: '79%';
+                    @include beforeProg(79%);
+                }
+            }
+        }
+    }
+}

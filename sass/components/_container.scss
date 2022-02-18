@@ -1,0 +1,9 @@
+@import '../abstract/mixins';
+
+.container {
+    max-width: 160rem;
+    margin: 0 2rem;
+    @include sm {
+        
+    }
+}

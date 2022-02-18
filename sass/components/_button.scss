@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+.btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: $medium $x-large;
+    border-radius: .7rem;
+    border: .1rem solid $akcent;
+    background-color: $akcent;
+    color: $white;
+    font-weight: $bold;
+    transition: .5s;
+    font-size: $medium;
+    letter-spacing: .1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .2rem;
+    &:hover {
+        border: .1rem solid $contrast;
+        background-color: $contrast;
+    }
+    &.btn-sec {
+        border-color: white;
+        background-color: transparent;
+        &:hover {
+            border: .1rem solid $contrast;
+            background-color: $contrast;
+        }
+    }
+}

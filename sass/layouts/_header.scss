@@ -1,0 +1,13 @@
+@import '../abstract/mixins';
+@import '../components/header/_index';
+@import '../components/container';
+.header {
+    height: auto;
+    background-image: url('../img/bg-home.jpg');
+    background-position: 50%;
+    background-size: cover;
+    backdrop-filter: brightness(30%);
+    &::after {
+        @include backFilter;
+    }
+}

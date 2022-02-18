@@ -1,0 +1,47 @@
+@import '../../abstract/_index';
+@import '../../base/_index';
+@import './burger';
+
+.header__nav {
+    @include flex;
+    height: 9rem;
+    padding: 0 $s-large;
+    &-logo {
+        color: $white;
+        text-transform: uppercase;
+        font-size: $large;
+        font-weight: bold;
+        font-family: Roboto, sans-serif;
+    }
+    &-burger{ 
+        display: block;
+        justify-self: self-end;
+    }
+    &.first {
+        position: fixed;
+        width: 100%;
+        display: none;
+        &.active {
+            display: flex;
+        }
+    }
+    &.sec {
+        @include grid;
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        padding: $s-large;
+        background-color: $akcent;
+        height: 9rem;
+        overflow: hidden;
+        transition: .4s;
+        &.active {
+            top: 0;
+            height: 40rem;
+        }
+    }
+    &-container {
+        @include flex;
+    }
+
+}

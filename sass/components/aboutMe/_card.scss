@@ -1,0 +1,22 @@
+.aboutMe {
+    &__card {
+        width: 60%;
+        height: 20rem;
+        margin: 4rem auto;
+        background-color: $white;
+        text-align: center;
+        box-shadow: .5rem .5rem 1rem $shadow;
+        &-num {
+            color: $akcent;
+            font-size: $x-large;
+            font-weight: $bolder;
+        }
+        &-title {
+            font-weight: $bolder;
+        }
+        &-img {
+            width: 10rem;
+            margin: 0 auto;
+        }
+    }
+}

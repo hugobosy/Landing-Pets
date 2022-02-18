@@ -1,0 +1,15 @@
+@import '../../abstract/variables';
+
+.link {
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $bolder;
+    transition: .4s;
+    font-size: $medium;
+    padding: $small 0;
+    font-family: 'Open Sans', sans-serif;
+    &:hover {
+        color: $contrast;
+    }
+}

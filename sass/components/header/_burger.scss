@@ -1,0 +1,32 @@
+@import '../../abstract/_index';
+.header__nav-burger {
+    @include burger;
+    cursor: pointer;
+    span {
+        @include burgerSpan;
+        &:nth-child(1) {
+            top: 30%;
+        }
+        &:nth-child(2) {
+            top: 70%
+        }
+        &:nth-child(3) {
+            width: 35%;
+        }
+    }
+    
+}
+
+.header__nav-iks {
+    @include burger;
+    cursor: pointer;
+    span {
+        @include burgerSpan;
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            transform: rotate(-45deg);
+        }
+    }
+}
